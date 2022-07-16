@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 Razeware LLC. All rights reserved.
 //
 
-#import "Sphere.h"
-#import "sphere7.h"
+#import "RWTSphere.h"
+#import "sphere.h"
 
-@implementation Sphere
+@implementation RWTSphere
 
 - (instancetype)initWithShader:(RWTBaseEffect *)shader {
   if ((self = [super initWithName:"sphere7" shader:shader vertices:(RWTVertex *)Sphere_sphere_Vertices vertexCount:sizeof(Sphere_sphere_Vertices) / sizeof(Sphere_sphere_Vertices[0])])) {

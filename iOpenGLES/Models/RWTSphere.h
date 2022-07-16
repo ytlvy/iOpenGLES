@@ -8,7 +8,7 @@
 
 #import "RWTModel.h"
 
-@interface Sphere : RWTModel
+@interface RWTSphere : RWTModel
 
 - (instancetype)initWithShader:(RWTBaseEffect *)shader;
 

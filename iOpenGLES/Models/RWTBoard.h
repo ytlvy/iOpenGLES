@@ -8,7 +8,7 @@
 
 #import "RWTModel.h"
 
-@interface cylinder : RWTModel
+@interface RWTBoard : RWTModel
 
 - (instancetype)initWithShader:(RWTBaseEffect *)shader;
 

@@ -29,14 +29,14 @@
 		0F7CA9942882F452008B8E85 /* cylinderblue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CA9782882F451008B8E85 /* cylinderblue.m */; };
 		0F7CA9952882F452008B8E85 /* RWTMushroom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CA9792882F451008B8E85 /* RWTMushroom.m */; };
 		0F7CA9962882F452008B8E85 /* RWTTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CA97B2882F451008B8E85 /* RWTTree.m */; };
-		0F7CA9972882F452008B8E85 /* Sphere.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CA97D2882F451008B8E85 /* Sphere.m */; };
-		0F7CA9982882F452008B8E85 /* sphere7.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CA97E2882F451008B8E85 /* sphere7.m */; };
+		0F7CA9972882F452008B8E85 /* RWTSphere.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CA97D2882F451008B8E85 /* RWTSphere.m */; };
+		0F7CA9982882F452008B8E85 /* sphere.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CA97E2882F451008B8E85 /* sphere.m */; };
 		0F7CA9992882F452008B8E85 /* RWTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CA9822882F451008B8E85 /* RWTViewController.m */; };
 		0F7CA99A2882F452008B8E85 /* mushroom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CA9832882F451008B8E85 /* mushroom.m */; };
 		0F7CA99B2882F452008B8E85 /* boatd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CA9842882F451008B8E85 /* boatd.m */; };
 		0F7CA99C2882F452008B8E85 /* RWTSword.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CA9872882F451008B8E85 /* RWTSword.m */; };
-		0F7CA99D2882F452008B8E85 /* cylinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CA9882882F452008B8E85 /* cylinder.m */; };
-		0F7CA99E2882F452008B8E85 /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CA9892882F452008B8E85 /* Board.m */; };
+		0F7CA99D2882F452008B8E85 /* RWTCylinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CA9882882F452008B8E85 /* RWTCylinder.m */; };
+		0F7CA99E2882F452008B8E85 /* RWTBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CA9892882F452008B8E85 /* RWTBoard.m */; };
 		0F7CA99F2882F452008B8E85 /* sword.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CA98A2882F452008B8E85 /* sword.m */; };
 		0F7CA9A12882F452008B8E85 /* tree.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CA98E2882F452008B8E85 /* tree.m */; };
 		0F7CA9A52882F47C008B8E85 /* RWTSimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 0F7CA9A32882F47C008B8E85 /* RWTSimpleFragment.glsl */; };
@@ -75,23 +75,23 @@
 		0F7CA9772882F451008B8E85 /* sword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sword.h; sourceTree = "<group>"; };
 		0F7CA9782882F451008B8E85 /* cylinderblue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cylinderblue.m; sourceTree = "<group>"; };
 		0F7CA9792882F451008B8E85 /* RWTMushroom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTMushroom.m; sourceTree = "<group>"; };
-		0F7CA97A2882F451008B8E85 /* Sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sphere.h; sourceTree = "<group>"; };
+		0F7CA97A2882F451008B8E85 /* RWTSphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTSphere.h; sourceTree = "<group>"; };
 		0F7CA97B2882F451008B8E85 /* RWTTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTTree.m; sourceTree = "<group>"; };
 		0F7CA97C2882F451008B8E85 /* RWTCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTCube.h; sourceTree = "<group>"; };
-		0F7CA97D2882F451008B8E85 /* Sphere.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sphere.m; sourceTree = "<group>"; };
-		0F7CA97E2882F451008B8E85 /* sphere7.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sphere7.m; sourceTree = "<group>"; };
+		0F7CA97D2882F451008B8E85 /* RWTSphere.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTSphere.m; sourceTree = "<group>"; };
+		0F7CA97E2882F451008B8E85 /* sphere.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sphere.m; sourceTree = "<group>"; };
 		0F7CA97F2882F451008B8E85 /* RWTSword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTSword.h; sourceTree = "<group>"; };
-		0F7CA9812882F451008B8E85 /* cylinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cylinder.h; sourceTree = "<group>"; };
+		0F7CA9812882F451008B8E85 /* RWTCylinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTCylinder.h; sourceTree = "<group>"; };
 		0F7CA9822882F451008B8E85 /* RWTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTViewController.m; sourceTree = "<group>"; };
 		0F7CA9832882F451008B8E85 /* mushroom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mushroom.m; sourceTree = "<group>"; };
 		0F7CA9842882F451008B8E85 /* boatd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = boatd.m; sourceTree = "<group>"; };
 		0F7CA9852882F451008B8E85 /* boatd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = boatd.h; sourceTree = "<group>"; };
 		0F7CA9862882F451008B8E85 /* RWTModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTModel.h; sourceTree = "<group>"; };
 		0F7CA9872882F451008B8E85 /* RWTSword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTSword.m; sourceTree = "<group>"; };
-		0F7CA9882882F452008B8E85 /* cylinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cylinder.m; sourceTree = "<group>"; };
-		0F7CA9892882F452008B8E85 /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
+		0F7CA9882882F452008B8E85 /* RWTCylinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTCylinder.m; sourceTree = "<group>"; };
+		0F7CA9892882F452008B8E85 /* RWTBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTBoard.m; sourceTree = "<group>"; };
 		0F7CA98A2882F452008B8E85 /* sword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sword.m; sourceTree = "<group>"; };
-		0F7CA98B2882F452008B8E85 /* sphere7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sphere7.h; sourceTree = "<group>"; };
+		0F7CA98B2882F452008B8E85 /* sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sphere.h; sourceTree = "<group>"; };
 		0F7CA98D2882F452008B8E85 /* tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tree.h; sourceTree = "<group>"; };
 		0F7CA98E2882F452008B8E85 /* tree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tree.m; sourceTree = "<group>"; };
 		0F7CA98F2882F452008B8E85 /* cylinderblue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cylinderblue.h; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 		0F7CA9A82882F494008B8E85 /* RWTBaseEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTBaseEffect.h; sourceTree = "<group>"; };
 		0F7CA9A92882F494008B8E85 /* RWTBaseEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTBaseEffect.m; sourceTree = "<group>"; };
 		0F7CA9AA2882F494008B8E85 /* RWTVertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTVertex.h; sourceTree = "<group>"; };
-		0F7CA9AC2882F6D5008B8E85 /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
+		0F7CA9AC2882F6D5008B8E85 /* RWTBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTBoard.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +115,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F184FA12882FBCF00335E73 /* Vertices */ = {
+			isa = PBXGroup;
+			children = (
+				0F7CA9852882F451008B8E85 /* boatd.h */,
+				0F7CA9842882F451008B8E85 /* boatd.m */,
+				0F7CA98F2882F452008B8E85 /* cylinderblue.h */,
+				0F7CA9782882F451008B8E85 /* cylinderblue.m */,
+				0F7CA9712882F451008B8E85 /* mushroom.h */,
+				0F7CA9832882F451008B8E85 /* mushroom.m */,
+				0F7CA98B2882F452008B8E85 /* sphere.h */,
+				0F7CA97E2882F451008B8E85 /* sphere.m */,
+				0F7CA9772882F451008B8E85 /* sword.h */,
+				0F7CA98A2882F452008B8E85 /* sword.m */,
+				0F7CA98D2882F452008B8E85 /* tree.h */,
+				0F7CA98E2882F452008B8E85 /* tree.m */,
+			);
+			path = Vertices;
+			sourceTree = "<group>";
+		};
 		0F7CA9322882F3D5008B8E85 = {
 			isa = PBXGroup;
 			children = (
@@ -134,8 +153,9 @@
 		0F7CA93D2882F3D5008B8E85 /* iOpenGLES */ = {
 			isa = PBXGroup;
 			children = (
-				0F7CA9A72882F486008B8E85 /* Model */,
-				0F7CA96F2882F443008B8E85 /* OpenGL */,
+				0F7CA9A72882F486008B8E85 /* Base */,
+				0F184FA12882FBCF00335E73 /* Vertices */,
+				0F7CA96F2882F443008B8E85 /* Models */,
 				0F7CA93E2882F3D5008B8E85 /* AppDelegate.h */,
 				0F7CA93F2882F3D5008B8E85 /* AppDelegate.m */,
 				0F7CA9722882F451008B8E85 /* RWTViewController.h */,
@@ -180,39 +200,25 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
-		0F7CA96F2882F443008B8E85 /* OpenGL */ = {
+		0F7CA96F2882F443008B8E85 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0F7CA9AC2882F6D5008B8E85 /* Board.h */,
-				0F7CA9892882F452008B8E85 /* Board.m */,
-				0F7CA9852882F451008B8E85 /* boatd.h */,
-				0F7CA9842882F451008B8E85 /* boatd.m */,
-				0F7CA9812882F451008B8E85 /* cylinder.h */,
-				0F7CA9882882F452008B8E85 /* cylinder.m */,
-				0F7CA98F2882F452008B8E85 /* cylinderblue.h */,
-				0F7CA9782882F451008B8E85 /* cylinderblue.m */,
-				0F7CA9712882F451008B8E85 /* mushroom.h */,
-				0F7CA9832882F451008B8E85 /* mushroom.m */,
+				0F7CA9AC2882F6D5008B8E85 /* RWTBoard.h */,
+				0F7CA9892882F452008B8E85 /* RWTBoard.m */,
+				0F7CA9812882F451008B8E85 /* RWTCylinder.h */,
+				0F7CA9882882F452008B8E85 /* RWTCylinder.m */,
 				0F7CA97C2882F451008B8E85 /* RWTCube.h */,
 				0F7CA9762882F451008B8E85 /* RWTCube.m */,
-				0F7CA9862882F451008B8E85 /* RWTModel.h */,
-				0F7CA9732882F451008B8E85 /* RWTModel.m */,
 				0F7CA9752882F451008B8E85 /* RWTMushroom.h */,
 				0F7CA9792882F451008B8E85 /* RWTMushroom.m */,
 				0F7CA97F2882F451008B8E85 /* RWTSword.h */,
 				0F7CA9872882F451008B8E85 /* RWTSword.m */,
 				0F7CA9742882F451008B8E85 /* RWTTree.h */,
 				0F7CA97B2882F451008B8E85 /* RWTTree.m */,
-				0F7CA97A2882F451008B8E85 /* Sphere.h */,
-				0F7CA97D2882F451008B8E85 /* Sphere.m */,
-				0F7CA98B2882F452008B8E85 /* sphere7.h */,
-				0F7CA97E2882F451008B8E85 /* sphere7.m */,
-				0F7CA9772882F451008B8E85 /* sword.h */,
-				0F7CA98A2882F452008B8E85 /* sword.m */,
-				0F7CA98D2882F452008B8E85 /* tree.h */,
-				0F7CA98E2882F452008B8E85 /* tree.m */,
+				0F7CA97A2882F451008B8E85 /* RWTSphere.h */,
+				0F7CA97D2882F451008B8E85 /* RWTSphere.m */,
 			);
-			path = OpenGL;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		0F7CA9A22882F464008B8E85 /* glsl */ = {
@@ -224,14 +230,16 @@
 			path = glsl;
 			sourceTree = "<group>";
 		};
-		0F7CA9A72882F486008B8E85 /* Model */ = {
+		0F7CA9A72882F486008B8E85 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				0F7CA9AA2882F494008B8E85 /* RWTVertex.h */,
 				0F7CA9A82882F494008B8E85 /* RWTBaseEffect.h */,
 				0F7CA9A92882F494008B8E85 /* RWTBaseEffect.m */,
-				0F7CA9AA2882F494008B8E85 /* RWTVertex.h */,
+				0F7CA9862882F451008B8E85 /* RWTModel.h */,
+				0F7CA9732882F451008B8E85 /* RWTModel.m */,
 			);
-			path = Model;
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,17 +332,17 @@
 				0F7CA99F2882F452008B8E85 /* sword.m in Sources */,
 				0F7CA9AB2882F494008B8E85 /* RWTBaseEffect.m in Sources */,
 				0F7CA9992882F452008B8E85 /* RWTViewController.m in Sources */,
-				0F7CA99E2882F452008B8E85 /* Board.m in Sources */,
+				0F7CA99E2882F452008B8E85 /* RWTBoard.m in Sources */,
 				0F7CA9942882F452008B8E85 /* cylinderblue.m in Sources */,
 				0F7CA9402882F3D5008B8E85 /* AppDelegate.m in Sources */,
-				0F7CA9972882F452008B8E85 /* Sphere.m in Sources */,
+				0F7CA9972882F452008B8E85 /* RWTSphere.m in Sources */,
 				0F7CA9512882F3D6008B8E85 /* main.m in Sources */,
 				0F7CA9432882F3D5008B8E85 /* SceneDelegate.m in Sources */,
 				0F7CA9952882F452008B8E85 /* RWTMushroom.m in Sources */,
-				0F7CA99D2882F452008B8E85 /* cylinder.m in Sources */,
+				0F7CA99D2882F452008B8E85 /* RWTCylinder.m in Sources */,
 				0F7CA9932882F452008B8E85 /* RWTCube.m in Sources */,
 				0F7CA99A2882F452008B8E85 /* mushroom.m in Sources */,
-				0F7CA9982882F452008B8E85 /* sphere7.m in Sources */,
+				0F7CA9982882F452008B8E85 /* sphere.m in Sources */,
 				0F7CA9962882F452008B8E85 /* RWTTree.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

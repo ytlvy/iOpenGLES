@@ -11,9 +11,9 @@
 #import "RWTBaseEffect.h"
 #import "RWTTree.h"
 #import "RWTSword.h"
-#import "Sphere.h"
-#import "cylinder.h"
-#import "Board.h"
+#import "RWTSphere.h"
+#import "RWTCylinder.h"
+#import "RWTBoard.h"
 
 @import CoreMotion;
 @interface RWTViewController (){
@@ -26,36 +26,36 @@
 @end
 
 @implementation RWTViewController {
-  RWTBaseEffect *_shader;
-  RWTTree *_tree;
-  RWTSword *_sword;
-  Sphere *_sphere;
-    cylinder *_cylinder;
-    cylinder *_hitCyliner;
+    RWTBaseEffect *_shader;
+    RWTTree *_tree;
+    RWTSword *_sword;
+    RWTSphere *_sphere;
+    RWTCylinder *_cylinder;
+    RWTCylinder *_hitCyliner;
     CMMotionManager *_motionManager;
-    cylinder *_secCylinder;
+    RWTCylinder *_secCylinder;
     NSTimeInterval _lastUpdateTime;
     NSTimeInterval _deltaTime;
-    cylinder *_thirdCylinder;
-    cylinder *_fourthCylinder;
-    cylinder *_fifthCylinder;
-    Board *_board;
+    RWTCylinder *_thirdCylinder;
+    RWTCylinder *_fourthCylinder;
+    RWTCylinder *_fifthCylinder;
+    RWTBoard *_board;
 }
 
 - (void)setupScene {
-  _shader = [[RWTBaseEffect alloc] initWithVertexShader:@"RWTSimpleVertex.glsl" fragmentShader:@"RWTSimpleFragment.glsl"];
-  _tree = [[RWTTree alloc] initWithShader:_shader];
-  _sword = [[RWTSword alloc] initWithShader:_shader];
-    _sphere = [[Sphere alloc]initWithShader:_shader];
+    _shader = [[RWTBaseEffect alloc] initWithVertexShader:@"RWTSimpleVertex.glsl" fragmentShader:@"RWTSimpleFragment.glsl"];
+    _tree = [[RWTTree alloc] initWithShader:_shader];
+    _sword = [[RWTSword alloc] initWithShader:_shader];
+    _sphere = [[RWTSphere alloc]initWithShader:_shader];
     _sphere.position = GLKVector3Make(1,-1,1);
-    _cylinder = [[cylinder alloc] initWithShader:_shader];
-    _secCylinder = [[cylinder alloc] initWithShader:_shader];
-    _thirdCylinder = [[cylinder alloc]initWithShader:_shader];
-    _fourthCylinder = [[cylinder alloc]initWithShader:_shader];
-    _fifthCylinder = [[cylinder alloc] initWithShader:_shader];
-    _board = [[Board alloc] initWithShader:_shader];
+    _cylinder = [[RWTCylinder alloc] initWithShader:_shader];
+    _secCylinder = [[RWTCylinder alloc] initWithShader:_shader];
+    _thirdCylinder = [[RWTCylinder alloc]initWithShader:_shader];
+    _fourthCylinder = [[RWTCylinder alloc]initWithShader:_shader];
+    _fifthCylinder = [[RWTCylinder alloc] initWithShader:_shader];
+    _board = [[RWTBoard alloc] initWithShader:_shader];
     //_cylinder.position = GLKVector3Make(0, 3.5, 2);
-  _sword.position = GLKVector3Make(0, 2, 0);
+    _sword.position = GLKVector3Make(0, 2, 0);
     //
     float aspect = fabsf(self.view.bounds.size.width / self.view.bounds.size.height);
     //
@@ -89,30 +89,30 @@
 }
 - (void)viewDidLoad
 {
-  [super viewDidLoad];
-  GLKView *view = (GLKView *)self.view;
-  view.context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
-  view.drawableDepthFormat = GLKViewDrawableDepthFormat16;
-  
-  [EAGLContext setCurrentContext:view.context];
-  
-  [self setupScene];
-  
+    [super viewDidLoad];
+    GLKView *view = (GLKView *)self.view;
+    view.context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+    view.drawableDepthFormat = GLKViewDrawableDepthFormat16;
+    
+    [EAGLContext setCurrentContext:view.context];
+    
+    [self setupScene];
+    
 }
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
-  glClearColor(200.0/255.0, 104.0/255.0, 55.0/255.0, 1.0);
-  glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-  glEnable(GL_DEPTH_TEST);
-  glEnable(GL_CULL_FACE);
-  glEnable(GL_BLEND);
-  glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-  //FIXME:change the 1 to -1
-  GLKMatrix4 viewMatrix = GLKMatrix4MakeTranslation(0, 0, -5);
-  //viewMatrix = GLKMatrix4Rotate(viewMatrix, GLKMathDegreesToRadians(20), 1, 0, 0);
-  
-  [_tree renderWithParentModelViewMatrix:viewMatrix];
-  [_sword renderWithParentModelViewMatrix:viewMatrix];
+    glClearColor(200.0/255.0, 104.0/255.0, 55.0/255.0, 1.0);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glEnable(GL_DEPTH_TEST);
+    glEnable(GL_CULL_FACE);
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    //FIXME:change the 1 to -1
+    GLKMatrix4 viewMatrix = GLKMatrix4MakeTranslation(0, 0, -5);
+    //viewMatrix = GLKMatrix4Rotate(viewMatrix, GLKMathDegreesToRadians(20), 1, 0, 0);
+    
+    [_tree renderWithParentModelViewMatrix:viewMatrix];
+    [_sword renderWithParentModelViewMatrix:viewMatrix];
     [_sphere renderWithParentModelViewMatrix:viewMatrix];
     [_cylinder renderWithParentModelViewMatrix:viewMatrix];
     [_secCylinder renderWithParentModelViewMatrix:viewMatrix];
@@ -121,13 +121,13 @@
     [_fifthCylinder renderWithParentModelViewMatrix:viewMatrix];
     [_board renderWithParentModelViewMatrix:viewMatrix];
 }
--(void)checkCollisions:(cylinder*)aCylinder{
+-(void)checkCollisions:(RWTCylinder*)aCylinder{
     if (((aCylinder.position.x) <= (_sphere.position.x + 0.2) && (aCylinder.position.x) >= (_sphere.position.x - 0.2) &&(aCylinder.position.y) <= (_sphere.position.y + 0.12) && (aCylinder.position.y) >= (_sphere.position.y - 0.12))) {
         
-       // NSLog(@"aCylinder.posX = %f,aCylinder.posY = %f,_sphere.posX = %f,           _sphere.posY = %f"
-      //        ,aCylinder.position.x, aCylinder.position.y,_sphere.position.x, _sphere.position.y);
+        // NSLog(@"aCylinder.posX = %f,aCylinder.posY = %f,_sphere.posX = %f,           _sphere.posY = %f"
+        //        ,aCylinder.position.x, aCylinder.position.y,_sphere.position.x, _sphere.position.y);
         
-    
+        
     }
     
     
@@ -149,20 +149,20 @@
         _deltaTime = self.timeSinceLastUpdate - _lastUpdateTime;
     }else{
         _deltaTime = 0;
-    
+        
     }
     secondsPassed++;
     thirdCylinder++;
     fourthCylinder++;
     fifthCylinder++;
     _lastUpdateTime = self.timeSinceLastUpdate;
-  [_tree updateWithDelta:self.timeSinceLastUpdate];
-  [_sword updateWithDelta:self.timeSinceLastUpdate];
-   
+    [_tree updateWithDelta:self.timeSinceLastUpdate];
+    [_sword updateWithDelta:self.timeSinceLastUpdate];
+    
     [_sphere updateWithDelta:self.timeSinceLastUpdate];
-     [self hitTest];
+    [self hitTest];
     [_cylinder updateWithDelta:self.timeSinceLastUpdate];
-     [self processUserMotionForUpdate:self.timeSinceLastUpdate];
+    [self processUserMotionForUpdate:self.timeSinceLastUpdate];
     
     if (secondsPassed > 30) {
         [_secCylinder updateWithDelta:self.timeSinceLastUpdate];

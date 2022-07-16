@@ -1,4 +1,4 @@
-#import "sphere7.h"
+#import "sphere.h"
 
 const GLKVector4 Sphere_sphere_ambient = {0.000000, 0.000000, 0.000000, 1.000000};
 const GLKVector4 Sphere_sphere_diffuse = {0.640000, 0.576910, 0.202880, 1.000000};

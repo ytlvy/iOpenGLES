@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 Razeware LLC. All rights reserved.
 //
 
-#import "Board.h"
+#import "RWTBoard.h"
 #import "boatd.h"
 
-@implementation Board
+@implementation RWTBoard
 
 - (instancetype)initWithShader:(RWTBaseEffect *)shader {
   if ((self = [super initWithName:"boatd" shader:shader vertices:(RWTVertex *)Cube_boardone_Vertices vertexCount:sizeof(Cube_boardone_Vertices) / sizeof(Cube_boardone_Vertices[0])])) {

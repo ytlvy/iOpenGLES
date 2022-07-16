@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 Razeware LLC. All rights reserved.
 //
 
-#import "cylinder.h"
+#import "RWTCylinder.h"
 #import "cylinderblue.h"
 
-@implementation cylinder{
+@implementation RWTCylinder{
     float posX_float;
     int secondsPassed;
 }
