@@ -19,16 +19,24 @@
 @property (nonatomic) float rotationX;
 @property (nonatomic) float rotationY;
 @property (nonatomic) float rotationZ;
+
 @property (nonatomic) float scale;
 @property (nonatomic) GLuint texture;
+
 @property (assign) GLKVector3 matAmbientColor;
 @property (assign) GLKVector3 matDiffuseColor;
 @property (assign) GLKVector3 matSpecularColor;
+
 @property (assign) float shininess;
 
 - (instancetype)initWithName:(char *)name shader:(RWTBaseEffect *)shader vertices:(RWTVertex *)vertices vertexCount:(unsigned int)vertexCount;
+
 - (void)renderWithParentModelViewMatrix:(GLKMatrix4)parentModelViewMatrix;
+
+//更新
 - (void)updateWithDelta:(NSTimeInterval)dt;
+
+//加载纹理
 - (void)loadTexture:(NSString *)filename;
 
 @end

@@ -15,11 +15,11 @@
 @property (nonatomic, assign) GLuint programHandle;
 @property (nonatomic, assign) GLKMatrix4 modelViewMatrix;
 @property (nonatomic, assign) GLKMatrix4 projectionMatrix;
-@property (assign) GLuint texture;
+@property (assign) GLuint     texture;
 @property (assign) GLKVector3 matAmbientColor;
 @property (assign) GLKVector3 matDiffuseColor;
 @property (assign) GLKVector3 matSpecularColor;
-@property (assign) float shininess;
+@property (assign) float      shininess;
 
 - (id)initWithVertexShader:(NSString *)vertexShader
             fragmentShader:(NSString *)fragmentShader;

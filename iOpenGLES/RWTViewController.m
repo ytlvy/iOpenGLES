@@ -44,24 +44,29 @@
 
 - (void)setupScene {
     _shader = [[RWTBaseEffect alloc] initWithVertexShader:@"RWTSimpleVertex.glsl" fragmentShader:@"RWTSimpleFragment.glsl"];
-    _tree = [[RWTTree alloc] initWithShader:_shader];
-    _sword = [[RWTSword alloc] initWithShader:_shader];
-    _sphere = [[RWTSphere alloc]initWithShader:_shader];
+    
+    _tree            = [[RWTTree alloc] initWithShader:_shader];
+    _sword           = [[RWTSword alloc] initWithShader:_shader];
+    _sphere          = [[RWTSphere alloc]initWithShader:_shader];
     _sphere.position = GLKVector3Make(1,-1,1);
-    _cylinder = [[RWTCylinder alloc] initWithShader:_shader];
-    _secCylinder = [[RWTCylinder alloc] initWithShader:_shader];
-    _thirdCylinder = [[RWTCylinder alloc]initWithShader:_shader];
-    _fourthCylinder = [[RWTCylinder alloc]initWithShader:_shader];
-    _fifthCylinder = [[RWTCylinder alloc] initWithShader:_shader];
-    _board = [[RWTBoard alloc] initWithShader:_shader];
+    
+    _cylinder        = [[RWTCylinder alloc] initWithShader:_shader];
+    _secCylinder     = [[RWTCylinder alloc] initWithShader:_shader];
+    _thirdCylinder   = [[RWTCylinder alloc] initWithShader:_shader];
+    _fourthCylinder  = [[RWTCylinder alloc] initWithShader:_shader];
+    _fifthCylinder   = [[RWTCylinder alloc] initWithShader:_shader];
+    
+    _board           = [[RWTBoard alloc] initWithShader:_shader];
     //_cylinder.position = GLKVector3Make(0, 3.5, 2);
     _sword.position = GLKVector3Make(0, 2, 0);
-    //
-    float aspect = fabsf(self.view.bounds.size.width / self.view.bounds.size.height);
-    //
+    
+    
+    float aspect = fabs(self.view.bounds.size.width / self.view.bounds.size.height);
     _shader.projectionMatrix = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(65.0f), aspect, 0.1f, 100.0f);
+    
     _motionManager = [[CMMotionManager alloc]init];
     [_motionManager startAccelerometerUpdates];
+    
     [_cylinder loadTexture:@"cylinderblue.png"];
     [_secCylinder loadTexture:@"barrelsecond.png"];
     [_thirdCylinder loadTexture:@"whitebarrel.png"];
@@ -90,6 +95,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     GLKView *view = (GLKView *)self.view;
     view.context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
     view.drawableDepthFormat = GLKViewDrawableDepthFormat16;
